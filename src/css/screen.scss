@@ -1,3 +1,4 @@
+@import 'variables';
 * {
   box-sizing: border-box;
 }
@@ -92,3 +93,4 @@ section {
 }
 
 @import 'components/logo';
+@import 'components/forms';
