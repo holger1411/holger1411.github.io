@@ -224,3 +224,19 @@ section {
   100% {
     fill: inherit;
     text-shadow: inherit; } }
+
+form {
+  margin: 1.5em 0; }
+
+input {
+  padding: .5em; }
+  input.email {
+    font-size: 24px;
+    width: 100%; }
+  input.button {
+    font-size: 24px;
+    background-color: #345678;
+    color: #fff;
+    border: none;
+    margin-top: .25em;
+    padding: .5em 1.5em; }
