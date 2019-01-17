@@ -3,31 +3,45 @@
   box-sizing: border-box;
 }
 html {
+  color: #444;
   font-size: 16px;
-  font-family: 'Lora', helvetica, sans-serif;
+  font-family: 'Lato', helvetica, sans-serif;
   height: 100%;
 }
 
-/* 16px @ 480px increasing to 26px @ 1680px */
-@media (min-width: 480px) {
-  html {
-    font-size: calc(1rem + ((1vw - 4.8px) * 0.8333));
-    /* Where: * 0.8333 = 100 * font_Size_Difference / viewport_Width_Difference */
-  }
-}
-/* Prevent font scaling beyond this breakpoint */
-@media (min-width: 1680px) {
-  html {
-    font-size: 26px;
-  }
-}
-
 p {
-  line-height: 1.5em;
+  font-size: 1.125rem;
+  line-height: 1.667em;
+  margin: 0 0 1rem;
 }
 
-h1 {
-  color: #345678;
+.heading1 {
+  margin: 0 0 2rem;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.tagline {
+  display: block;
+  margin: 0 0 0.5rem;
+
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.dateline {
+  display: inline-block;
+  margin: 0 0 2rem;
+
+  background: rgba(255, 255, 0, 0.25);
+
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 a {
@@ -45,10 +59,6 @@ body {
   height: 100%;
 }
 
-section {
-  border-top:1px solid #ccc;
-}
-
 .header {
   background: #0a111d url(img/brick.jpg) center 0 no-repeat;
 }
@@ -56,12 +66,7 @@ section {
 .content {
   box-shadow: 0 0 300px #000;
   flex-grow: 1;
-
-  &__inner {
-    max-width: 38rem;
-    padding: 3rem;
-    margin: 0 auto;
-  }
+  padding-top: 3rem;
 }
 
 @media (min-resolution: 2dppx) {
@@ -86,10 +91,45 @@ section {
 
     width: 60%;
     height: 100%;
-    &__inner {
-      max-width: 32rem;
+  }
+}
+
+.section {
+  &__inner {
+    max-width: 48rem;
+    padding: 3rem;
+    margin: 0 auto;
+  }
+
+  &--grey {
+    background: #f2f2f2;
+  }
+}
+
+.legal {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  a {
+    color: #aaa;
+    font-size: 0.75rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
+}
+
+.mapslink {
+  background: url(img/icon_maps.svg) 0 center no-repeat;
+  padding: 0 0 0 28px;
+  font-size: 0.875rem;
 }
 
 @import 'components/logo';

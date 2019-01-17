@@ -1,18 +1,42 @@
-form {
-  margin:1.5em 0;
-}
-input {
-  padding:.5em;
-  &.email {
-    font-size:24px;
-      width:100%;
+.newsletter {
+  max-width: 28rem;
+  position: relative;
+  height: 40px;
+  margin: 0 0 2rem;
+
+  &__input,
+  &__button {
+    position: absolute;
+    height: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
   }
-  &.button {
-    font-size:24px;
-    background-color:$primary;
-    color:#fff;
-    border:none;
-    margin-top:.25em;
-    padding:.5em 1.5em;
+
+  &__input {
+    width: 100%;
+    border: 1px #345678 solid;
+    text-indent: 0.8889rem;
+    padding-right: 7.111rem;
+
+    &::placeholder {
+      color: #777;
+    }
+  }
+
+  &__button {
+    right: 0;
+    border: none;
+    background: #345678;
+    color: #fff;
+    cursor: pointer;
+    width: 7.111rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.7778rem;
   }
 }

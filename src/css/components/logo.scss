@@ -14,14 +14,6 @@
   filter: url(#dropShadow);
   overflow: visible;
 }
-#logo text {
-  font-family: Satisfy-Regular, Satisfy;
-  font-weight: normal;
-  font-size: 48px;
-  fill: #d2d6ee;
-  text-shadow: 0 0 300px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.6);
-  overflow: visible;
-}
 #outer-top,
 #outer-bottom {
   animation: blink2 linear infinite 3s;
@@ -31,7 +23,9 @@
   animation: blink1 linear infinite 3s;
 }
 #Digital {
-  animation: error linear infinite 10s;
+  path {
+    animation: error linear infinite 10s;
+  }
 }
 
 @keyframes blink1 {
@@ -74,23 +68,23 @@
 
 @keyframes error {
   96% {
-    fill: inherit;
-    text-shadow: inherit;
+    stroke: #d2d6ee;
+    filter: url(#dropShadow);
   }
   97% {
-    fill: #17253b;
-    text-shadow: 0 0 5px #17253b;
+    stroke: #17253b;
+    filter: url(#dropShadowOff);
   }
   98% {
-    fill: inherit;
-    text-shadow: inherit;
+    stroke: #d2d6ee;
+    filter: url(#dropShadow);
   }
   99% {
-    fill: #17253b;
-    text-shadow: 0 0 5px #17253b;
+    stroke: #17253b;
+    filter: url(#dropShadowOff);
   }
   100% {
-    fill: inherit;
-    text-shadow: inherit;
+    stroke: #d2d6ee;
+    filter: url(#dropShadow);
   }
 }
