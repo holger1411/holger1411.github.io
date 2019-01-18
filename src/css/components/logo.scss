@@ -8,9 +8,7 @@
   overflow: visible;
 }
 #logo path {
-  stroke: #d2d6ee;
-  stroke-linecap: round;
-  stroke-width: 3.5;
+  fill: #d2d6ee;
   filter: url(#dropShadow);
   overflow: visible;
 }
@@ -30,61 +28,61 @@
 
 @keyframes blink1 {
   0% {
-    stroke: #17253b;
+    fill: #17253b;
     filter: url(#dropShadowOff);
   }
   20% {
-    stroke: #17253b;
+    fill: #17253b;
     filter: url(#dropShadowOff);
   }
   21% {
-    stroke: #d2d6ee;
+    fill: #d2d6ee;
     filter: url(#dropShadow);
   }
   100% {
-    stroke: #d2d6ee;
+    fill: #d2d6ee;
     filter: url(#dropShadow);
   }
 }
 
 @keyframes blink2 {
   0% {
-    stroke: #17253b;
+    fill: #17253b;
     filter: url(#dropShadowOff);
   }
   40% {
-    stroke: #17253b;
+    fill: #17253b;
     filter: url(#dropShadowOff);
   }
   41% {
-    stroke: #d2d6ee;
+    fill: #d2d6ee;
     filter: url(#dropShadow);
   }
   100% {
-    stroke: #d2d6ee;
+    fill: #d2d6ee;
     filter: url(#dropShadow);
   }
 }
 
 @keyframes error {
   96% {
-    stroke: #d2d6ee;
+    fill: #d2d6ee;
     filter: url(#dropShadow);
   }
   97% {
-    stroke: #17253b;
+    fill: #17253b;
     filter: url(#dropShadowOff);
   }
   98% {
-    stroke: #d2d6ee;
+    fill: #d2d6ee;
     filter: url(#dropShadow);
   }
   99% {
-    stroke: #17253b;
+    fill: #17253b;
     filter: url(#dropShadowOff);
   }
   100% {
-    stroke: #d2d6ee;
+    fill: #d2d6ee;
     filter: url(#dropShadow);
   }
 }
